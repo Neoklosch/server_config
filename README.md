@@ -50,5 +50,6 @@ The `slaves` config file must be modified by hand. Un-/Comment the slaves you wa
 
 ## Additional stuff
 
-`cp /home/vs_pj/server_config/java.sh /etc/profile.d/java.sh`
 This overwrite wrong JAVA_HOME dependency
+
+`cp /home/vs_pj/server_config/java.sh /etc/profile.d/java.sh`
