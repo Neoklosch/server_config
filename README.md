@@ -58,6 +58,8 @@ Create datanode dir on the slaves machine
 ### Attention!
 The `slaves` config file must be modified by hand. Un-/Comment the slaves you want.
 
+`nano /home/vs_pj/hadoop/etc/hadoop/slaves`
+
 ## Additional stuff
 
 Fix some server pre-configs
