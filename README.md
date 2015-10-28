@@ -37,11 +37,15 @@ Copy all config files from the hadoop folder from the git repo to `/home/vs_pj/h
 
 Create hadoop pid dir
 
-`mkdir /home/vs_pj/hadoop_pid_dir`
+`mkdir /home/vs_pj/hadoop_pid`
 
 Change permission for the folder so that only the vs_pj user and group can write
 
-`chmod 770 /home/vs_pj/hadoop_pid_dir`
+`chmod 770 /home/vs_pj/hadoop_pid`
+
+Create hadoop log dir
+
+`mkdir /home/vs_pj/hadoop_log`
 
 ### Attention!
 The `slaves` config file must be modified by hand. Un-/Comment the slaves you want.

@@ -111,8 +111,8 @@ fi
 # Exports
 export JAVA_HOME=/opt/jdk1.8.0_45
 export HADOOP_HOME=/home/vs_pj/hadoop
-export HADOOP_LOG_DIR=/var/log/hadoop
-export HADOOP_PID_DIR=/home/vs_pj/hadoop_pid_dir
+export HADOOP_LOG_DIR=/home/vs_pj/hadoop_log
+export HADOOP_PID_DIR=/home/vs_pj/hadoop_pid
 
 # Add Hadoop bin/ directory to PATH
 export PATH=$PATH:$HADOOP_HOME/bin
