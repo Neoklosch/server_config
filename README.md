@@ -43,12 +43,12 @@ Change permission for the folder so that only the vs_pj user and group can write
 
 `chmod 770 /home/vs_pj/hadoop_pid_dir`
 
-Fix some server pre-configs
-
 ### Attention!
 The `slaves` config file must be modified by hand. Un-/Comment the slaves you want.
 
 ## Additional stuff
+
+Fix some server pre-configs
 
 This overwrite wrong JAVA_HOME dependency
 
