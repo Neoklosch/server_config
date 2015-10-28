@@ -11,5 +11,13 @@
   determine the host, port, etc. for a filesystem.</description>
 </property>
 
+<!--
+<property>
+  <name>io.file.buffer.size</name>
+  <value>131072</value>
+  <description>Size of read/write buffer used in SequenceFiles.</description>
+</property>
+-->
+
 <configuration>
 </configuration>

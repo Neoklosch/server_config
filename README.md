@@ -47,6 +47,14 @@ Create hadoop log dir
 
 `mkdir /home/vs_pj/hadoop_log`
 
+Create namenode dir on the root machine
+
+`mkdir /home/vs_pj/hadoop_namenode`
+
+Create datanode dir on the slaves machine
+
+`mkdir /home/vs_pj/hadoop_datanode`
+
 ### Attention!
 The `slaves` config file must be modified by hand. Un-/Comment the slaves you want.
 
