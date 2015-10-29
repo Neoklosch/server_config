@@ -110,10 +110,14 @@ fi
 
 # Exports
 export JAVA_HOME=/opt/jdk1.8.0_45
+
 export HADOOP_HOME=/home/vs_pj/hadoop
 export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
 export HADOOP_LOG_DIR=/home/vs_pj/hadoop_log
 export HADOOP_PID_DIR=/home/vs_pj/hadoop_pid
+
+export FLINK_HOME=/home/vs_pj/flink
+export FLINK_HOME_CONF_DIR=/home/vs_pj/flink/conf
 
 # Add Hadoop bin/ directory to PATH
 export PATH=$PATH:$HADOOP_HOME/bin

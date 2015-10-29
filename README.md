@@ -31,7 +31,7 @@ Reload the .bashrc
 
 ## Start configuring your hadoop environment.
 
-Copy all config files from the hadoop folder from the git repo to `/home/vs_pj/hadoop/etc/hadoop`
+Copy all config files from the hadoop subfolder from the git repo to `/home/vs_pj/hadoop/etc/hadoop`
 
 `cp /home/vs_pj/server_config/hadoop/* /home/vs_pj/hadoop/etc/hadoop/`
 
@@ -99,3 +99,32 @@ If you want to stop HDFS
 Check you namenode
 
 `http://130.149.248.XY:50070/dfshealth.html#tab-overview`
+
+## Install flink
+
+Download flink to home folder `/home/vs_pj/`
+
+`wget http://apache.lauf-forum.at/flink/flink-0.9.1/flink-0.9.1-bin-hadoop27.tgz`
+
+Extract them
+
+`tar xzf flink-0.9.1-bin-hadoop27.tgz`
+
+Rename the folder
+
+`mv flink-0.9.1 flink`
+
+## Start configuring your flink environment.
+
+Copy all config files from the flink subfolder from the git repo to `/home/vs_pj/flink/conf/`
+
+`cp /home/vs_pj/server_config/flink/* /home/vs_pj/flink/conf/`
+
+### Attention!
+The `slaves` config file must be modified by hand. Un-/Comment the slaves you want.
+
+`nano /home/vs_pj/flink/conf/slaves`
+
+You have also to configure the `flink-conf.yaml` config file by hand. Un-/Comment the `jobmanager.rpc.address` you want in line 25 or line 28.
+
+`nano /home/vs_pj/flink/conf/flink-conf.yaml`
