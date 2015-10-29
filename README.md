@@ -96,7 +96,7 @@ If you want to stop HDFS
 
 ## Check you running HDFS instance
 
-Check you namenode
+Check you namenode (XY is the namenode server ip asok05 -> 34; asok13 -> 42)
 
 `http://130.149.248.XY:50070/dfshealth.html#tab-overview`
 
@@ -128,3 +128,39 @@ The `slaves` config file must be modified by hand. Un-/Comment the slaves you wa
 You have also to configure the `flink-conf.yaml` config file by hand. Un-/Comment the `jobmanager.rpc.address` you want in line 25 or line 28.
 
 `nano /home/vs_pj/flink/conf/flink-conf.yaml`
+
+## Start flink
+
+Now the easy task
+
+`$FLINK_HOME/bin/start-cluster.sh`
+
+If you want to start the streaming mode
+
+`$FLINK_HOME/bin/start-cluster-streaming.sh`
+
+If you want to use the flink web-client you have to start them separately
+
+`$FLINK_HOME/bin/start-webclient.sh`
+
+Stop them with
+
+`$FLINK_HOME/bin/stop-webclient.sh`
+
+In addition to that you can stop flink
+
+`$FLINK_HOME/bin/stop-cluster.sh`
+
+And same for the streaming mode
+
+`$FLINK_HOME/bin/stop-cluster-streaming.sh`
+
+## Check your running flink instance
+
+XY is the namenode server ip asok05 -> 34; asok13 -> 42
+
+`http://130.149.248.XY:8081`
+
+Check the web-client
+
+`http://130.149.248.XY:8080`
