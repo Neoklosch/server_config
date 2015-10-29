@@ -111,6 +111,7 @@ fi
 # Exports
 export JAVA_HOME=/opt/jdk1.8.0_45
 export HADOOP_HOME=/home/vs_pj/hadoop
+export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
 export HADOOP_LOG_DIR=/home/vs_pj/hadoop_log
 export HADOOP_PID_DIR=/home/vs_pj/hadoop_pid
 

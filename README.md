@@ -67,3 +67,35 @@ Fix some server pre-configs
 This overwrite wrong JAVA_HOME dependency
 
 `cp /home/vs_pj/server_config/java.sh /etc/profile.d/java.sh`
+
+## Starting Hadoop
+
+Before you can start Hadoop you have to format the HDFS. Attention: All data in your (not existing) HDFS will be lost! Only on your Namenode (asok05 or asok13)
+
+`$HADOOP_HOME/bin/hdfs namenode -format <clustername>`
+
+Finally start the Hadoop Namenode (asok05 or asok13)
+
+`$HADOOP_HOME/sbin/hadoop-daemon.sh --config $HADOOP_CONF_DIR --script hdfs start namenode`
+
+Start you Hadoop Datanodes (the other asoks)
+
+ `$HADOOP_HOME/sbin/hadoop-daemons.sh --config $HADOOP_CONF_DIR --script hdfs start datanode`
+
+If you are done with that you can start all of the HDFS processes
+
+`$HADOOP_HOME/sbin/start-dfs.sh`
+
+Eventually you have to accept the `ECDSA key fingerprint` during this process.
+
+If you get the error message `xxx.xxx.xxx.xxx JAVA_HOME is not set and could not be found.` make sure that in the /home/vs_pj/hadoop/etc/hadoop/hadoop-env.sh file you an export to the correct path of your JAVA_HOME.
+
+If you want to stop HDFS
+
+`$HADOOP_HOME/sbin/stop-dfs.sh`
+
+## Check you running HDFS instance
+
+Check you namenode
+
+`http://130.149.248.XY:50070/dfshealth.html#tab-overview`
