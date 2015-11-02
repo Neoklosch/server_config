@@ -6,6 +6,7 @@ alias la='l -A'
 alias llt='l -lrt'
 alias lla='l -lA'
 alias llat='l -lArt'
+alias h='history'
 
 # hadoop aliases
 unalias fs &> /dev/null
