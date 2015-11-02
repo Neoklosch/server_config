@@ -60,6 +60,10 @@ The `slaves` config file must be modified by hand. Un-/Comment the slaves you wa
 
 `nano /home/vs_pj/hadoop/etc/hadoop/slaves`
 
+You have also to configure the `core-site.xml` manually. Uncomment the master Namenode (asok05 or asok13)
+
+`nano /home/vs_pj/hadoop/etc/hadoop/core-site.xml`
+
 ## Additional stuff
 
 Fix some server pre-configs
