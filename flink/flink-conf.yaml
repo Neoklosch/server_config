@@ -101,4 +101,4 @@ state.backend: jobmanager
 # You can also directly specify the paths to hdfs-default.xml and hdfs-site.xml
 # via keys 'fs.hdfs.hdfsdefault' and 'fs.hdfs.hdfssite'.
 #
-# fs.hdfs.hadoopconf: /path/to/hadoop/conf/
+fs.hdfs.hadoopconf: ~/hadoop/etc/hadoop
