@@ -102,4 +102,4 @@ state.backend: jobmanager
 # via keys 'fs.hdfs.hdfsdefault' and 'fs.hdfs.hdfssite'.
 #
 fs.hdfs.hadoopconf: ~/hadoop/etc/hadoop
-env.java.home: opt/jdk.1.8.0_45
+env.java.home: /opt/jdk.1.8.0_45
